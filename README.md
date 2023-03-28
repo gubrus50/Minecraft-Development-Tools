@@ -13,7 +13,7 @@ Minecraft-DT2 is a superiour software to outdated MDT launcher: Original project
 <h4>History</h4>
 The first generation of MDT is buggy and unsupported as it runs on:
 <ul>
-  <li>.HTA (Html Application), and</li>
+  <li>HTA (Html Application), and</li>
   <li>IE9 (Internet Explorer 9).</li>
 </ul>
 It is one of my first-ever projects. Hence, unprofessionalism. To redeem my past self and deliver the software people deserve, I decided to create an improved and stable Launcher with its new, polished Development Tool: Command Creation Generator.
