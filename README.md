@@ -6,10 +6,13 @@
 </ul>
 <br>
 
-<h2> Minecraft-Development-Tools - Launcher</h2>
+<h2> Minecraft-DT2 - Launcher </h2>
 
-[Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt/)
+Minecraft-DT2 is a superiour software to outdated MDT launcher: Original project: [Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt/)
 
+<h4>History</h4>
+The first generation of MDT is buggy and unsupported as it runs on .HTA (Html Application) + IE9 (Internet Explorer 9).<br>
+It is one of my first ever projects. Hence, inexperience is visible and painful. To redeem my past self and to deliver the software that people deserve, I decided to create an improved and stable Launcher with its new, polished Development Tool: Command Creation Generator.
 <hr>
 <table>
   <tr>
