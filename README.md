@@ -1,5 +1,15 @@
-# Minecraft-Development-Tools - Launcher
-<h3>What is Minecraft-DT?</h3> [Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt)
+# WHAT IS Minecraft-DT?
+<ul>
+  <li>Minecraft-DT is a simple launcher for Development Tools (Editors based on game known as <strong>Minecraft</strong></li>
+  <li>Development Tools save user's time by takling complex tasks.</li>
+  <li>The main goal of Minecraft-DT is to support offline players creativity.</li>
+</ul>
+<br>
+
+<h2> Minecraft-Development-Tools - Launcher</h2>
+
+[Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt/)
+
 <hr>
 <table>
   <tr>
@@ -10,7 +20,7 @@
 
 <br>
 
-# Development Tool - Command Creation Generator
+<h2> Development Tool - Command Creation Generator</h2>
 <hr>
 <table>
   <tr>
