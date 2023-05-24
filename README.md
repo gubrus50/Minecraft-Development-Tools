@@ -21,7 +21,7 @@ It is one of my first-ever projects. Hence, unprofessionalism. To redeem my past
 
 <h3>Download Minecraft-DT2</h3>
 
-[Download now v0.1.5 (Alpha)](https://drive.google.com/file/d/1U-w0nR4g5hd0BCar8cE_8AtlD6afhZyS/view?usp=share_link)
+[Download now v0.1.5 (Alpha)](https://drive.google.com/file/d/1U-w0nR4g5hd0BCar8cE_8AtlD6afhZyS/view?usp=share_link) (with: Command Creation Generator)
 <br>
 
 <table>
