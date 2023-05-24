@@ -4,7 +4,8 @@
   "description": "Minecraft-DT is a simple launcher for special development tools which are a third party editors based on game known as Minecraft. Those editors save users time by completing complex instructions in the background.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "keywords": [
     "Minecraft-DT2",
@@ -16,6 +17,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "electron": "^22.0.0"
+    "electron": "^22.0.0",
+    "electron-builder": "^24.4.0"
+  },
+  "build": {
+    "asar": true,
+    "appId": "com.mdt2.app",
+    "productName": "Minecraft-DT2",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
   }
 }

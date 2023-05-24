@@ -9,7 +9,9 @@ const path = require('path');
 const fs   = require('fs');
 const { resolve } = require('path');
 const { DefaultDeserializer } = require('v8');
-const __devTools  = './development_tools';
+
+const __devTools = path.join(__dirname, 'development_tools');
+
 
 
 let appWindow;
@@ -21,11 +23,11 @@ const createWindow = () => {
     height: 520,
     minHeight: 520,
     frame: false,
-    icon: __dirname + '/icon.ico',
+    icon: path.join(__dirname, 'icon.ico'),
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      preload: path.join(__dirname, './src/scripts/preload.js'),
+      preload: path.join(__dirname, 'src/scripts/preload.js'),
     },
   });
 
@@ -42,14 +44,15 @@ const createWindow = () => {
 
 const isDevToolWithValidConfig = async (__devTool) => {
 
-  let __dtConfig = __devTool + '/dt_config.json';
+  let __dtConfig = path.join(__devTool, 'dt_config.json');
+
 
   // Get and validate "dt_config.json" file's content
   let data = await fs.promises.readFile(__dtConfig, 'utf8')
   const dtConfig = JSON.parse(data);
 
   if ( // If valid keys are present
-        dtConfig.hasOwnProperty('title')
+       dtConfig.hasOwnProperty('title')
     && dtConfig.hasOwnProperty('icon')
     && dtConfig.hasOwnProperty('index')
     && dtConfig.hasOwnProperty('menu')
@@ -74,7 +77,7 @@ const isDevToolWithValidConfig = async (__devTool) => {
   // Validate file format for
   // keys: icon, index, menu, body_page & footer_page
   if (
-        !/.+?(\.png)/g.test(dtConfig.icon)
+       !/.+?(\.png)/g.test(dtConfig.icon)
     || !/.+?(\.html)/g.test(dtConfig.index)
     || !/.+?(\.html)/g.test(dtConfig.menu)
     || !/.+?(\.html)/g.test(dtConfig.body_page)
@@ -85,11 +88,11 @@ const isDevToolWithValidConfig = async (__devTool) => {
   // Return false if necessary files do not exist
   // at specified directories:
   if (
-    !fs.existsSync(__devTool + '/' + dtConfig.icon)
-    || !fs.existsSync(__devTool + '/' + dtConfig.index)
-    || !fs.existsSync(__devTool + '/' + dtConfig.menu)
-    || !fs.existsSync(__devTool + '/' + dtConfig.body_page)
-    || !fs.existsSync(__devTool + '/' + dtConfig.footer_page)
+       !fs.existsSync(path.join(__devTool, dtConfig.icon))
+    || !fs.existsSync(path.join(__devTool, dtConfig.index))
+    || !fs.existsSync(path.join(__devTool, dtConfig.menu))
+    || !fs.existsSync(path.join(__devTool, dtConfig.body_page))
+    || !fs.existsSync(path.join(__devTool, dtConfig.footer_page))
   )
   { return false }
   
@@ -105,7 +108,7 @@ const importDevTools = async () => {
   files.map(async (file) =>
   {
     // Check If file is a directory
-    let __devTool = __devTools + '/' + file;
+    let __devTool = path.join(__devTools, file);
     let stats     = fs.statSync(__devTool);
 
     if (!stats.isFile())
@@ -115,22 +118,21 @@ const importDevTools = async () => {
       files.map(async (file) =>
       {
         // If file from development_tool's direcotry has valid "dt_config.json"
-        let __dtFile      = __devTool + '/' + file;
+        let __dtFile      = path.join(__devTool, file);
         let stats         = fs.statSync(__dtFile);
         let isConfigValid = await isDevToolWithValidConfig(__devTool);
 
         if (stats.isFile() && file === 'dt_config.json' && isConfigValid === true)
         {
           // Read development_tool's configuration
-          let __dtConfig = __devTool + '/dt_config.json';
+          let __dtConfig = path.join(__devTool, 'dt_config.json');
           let data       = await fs.promises.readFile(__dtConfig, 'utf8')
           let dtConfig   = await JSON.parse(data);
 
-          let __dtMenu = __devTool + '/' + dtConfig.menu;
-          console.log(__dtMenu);
+          let __dtMenu = path.join(__devTool, dtConfig.menu);
 
           const dtMenuData  = await fs.promises.readFile(__dtMenu, 'utf8');
-          const appMenuData = await fs.promises.readFile('./menu.html', 'utf8');
+          const appMenuData = await fs.promises.readFile(path.join(__dirname, 'menu.html'), 'utf8');
 
           // Build and append development tool component
           appWindow.webContents.send('importDevTool', {
