@@ -6,6 +6,8 @@
 </ul>
 <br>
 
+<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/use_example.gif">
+
 <h2> Minecraft-DT2 - Launcher (In progress)</h2>
 
 Minecraft-DT2 is a superior software to the outdated MDT launcher: Original project: [Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt/)
@@ -24,15 +26,28 @@ It is one of my first-ever projects. Hence, unprofessionalism. To redeem my past
 [Download now v0.1.5 (Alpha)](https://drive.google.com/file/d/1U-w0nR4g5hd0BCar8cE_8AtlD6afhZyS/view?usp=share_link) (with: Command Creation Generator)
 <br>
 
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/mdt_0.png"/></td>
+<table>
+  <tr>
+    <td><img width="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/mdt_0.png"/></td>
+    <td><img width="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/mdt_1.png"/></td>
+  </tr>
+</table>
+
 
 
 <br>
 
 <h2> Development Tool - Command Creation Generator</h2>
 <hr>
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_0.png"/>
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_1.png"/>
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_2.png"/>
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_3.png"/>
+<table>
+  <tr>
+    <td><img width="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_0.png"/></td>
+    <td><img width="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_1.png"/></td>
+    <td><img width="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_2.png"/></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img height="500" src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/ccg_3.png"/>
+</p>
 
