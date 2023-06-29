@@ -5,9 +5,9 @@
   <li>The main goal of Minecraft-DT is to support offline players' creativity.</li>
 </ul>
 <br>
-
-<img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/use_example.gif">
-
+<p align="center">
+  <img src="https://github.com/gubrus50/Minecraft-Development-Tools/blob/master/showcase/use_example.gif"/>
+</p>
 <h2> Minecraft-DT2 - Launcher (In progress)</h2>
 
 Minecraft-DT2 is a superior software to the outdated MDT launcher: Original project: [Minecraft-DT-Classic](https://github.com/gubrus50/Minecraft-Development-Tools-Classic#what-is-minecraft-dt/)
